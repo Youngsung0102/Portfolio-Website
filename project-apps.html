@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accelerator Pedal Position Sensor - Youngsung Song</title>
+    <meta name="description" content="Designed and implemented an APPS for the 2023 Formula SAE car using Altium, processing pedal position sensor signal input and outputting a boosted signal.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/project.css">
+</head>
+<body>
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to Content</a>
+    
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-logo">
+                <a href="index.html" class="logo-link">
+                    <span class="logo-text">YS</span>
+                </a>
+            </div>
+            
+            <div class="nav-links">
+                <ol class="nav-list">
+                    <li><a href="index.html#about" class="nav-link"><span class="nav-number">01.</span> About</a></li>
+                    <li><a href="index.html#experience" class="nav-link"><span class="nav-number">02.</span> Experience</a></li>
+                    <li><a href="index.html#projects" class="nav-link"><span class="nav-number">03.</span> Projects</a></li>
+                    <li><a href="index.html#contact" class="nav-link"><span class="nav-number">04.</span> Contact</a></li>
+                </ol>
+                <div class="resume-button">
+                    <a href="CV Generic Application (2).pdf" class="btn-outline" target="_blank" rel="noopener noreferrer">Resume</a>
+                </div>
+            </div>
+            
+            <!-- Mobile menu button -->
+            <div class="menu-btn">
+                <span class="menu-btn-burger"></span>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Main Content -->
+    <main id="main-content" class="project-main">
+        <!-- Back Button -->
+        <div class="container">
+            <div class="back-button">
+                <a href="index.html" class="back-link">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>Back to Projects</span>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Project Hero -->
+        <section class="project-hero">
+            <div class="container">
+                <div class="project-hero-content">
+                    <h1 class="project-hero-title">Accelerator Pedal Position Sensor</h1>
+                    
+                    <div class="project-tech-hero">
+                        <ul class="tech-list">
+                            <li>Altium Designer</li>
+                            <li>LTspice</li>
+                            <li>Op-Amp Circuits</li>
+                            <li>Variable Gain/Offset</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="project-hero-image">
+                    <img src="images/APPSModel.png" alt="Accelerator Pedal Position Sensor" class="hero-img">
+                </div>
+            </div>
+        </section>
+        
+        
+        <!-- Project Details: Modern Card Layout -->
+        <section class="project-details">
+            <div class="container">
+                <div class="project-content-grid">
+                    <div class="what-how-result-section">
+                        <div class="what-how-result-grid">
+                            
+                            <!-- WHAT Section -->
+                            <div class="whr-section">
+                                <div class="whr-section-header">
+                                    <div class="whr-section-number">01</div>
+                                    <h2 class="whr-section-title">What</h2>
+                                </div>
+                                <div class="whr-section-content">
+                                    <!-- Project Description -->
+                                    <div class="project-description">
+                                        <h3 style="color: var(--green); margin-bottom: 15px; font-size: var(--fz-xl);">Accelerator Pedal Position Sensor</h3>
+                                        <p style="color: var(--lightest-slate); font-size: var(--fz-lg); line-height: 1.6; margin-bottom: 30px;">
+                                            Built a variable signal conditioning circuit that converts variable resistor signals from the accelerator pedal 
+                                            into clean, amplified voltage outputs for the MoTeC ECU of FSAE car. Features dual independent signal input 
+                                            to meet Formula SAE safety requirements where the 2 signals are compared and if the deviation exceeds 10%, 
+                                            the accelerator is cut off.
+                                        </p>
+                                    </div>
+                                
+
+                                    <!-- Key Features -->
+                                    <ul class="visual-bullets">
+                                        <li class="bullet-item">
+                                            <i class="bullet-icon fas fa-sitemap"></i>
+                                            <div class="bullet-content">
+                                                <div class="bullet-title">Signal Processing</div>
+                                                <p class="bullet-desc">Variable Resistor → Buffer → Variable Offset → Variable Gain</p>
+                                            </div>
+                                        </li>
+                                        <li class="bullet-item">
+                                            <i class="bullet-icon fas fa-shield-alt"></i>
+                                            <div class="bullet-content">
+                                                <div class="bullet-title">Dual Redundancy</div>
+                                                <p class="bullet-desc">Two independent sensor channels with 10% deviation monitoring</p>
+                                            </div>
+                                        </li>
+                                        <li class="bullet-item">
+                                            <i class="bullet-icon fas fa-sliders-h"></i>
+                                            <div class="bullet-content">
+                                                <div class="bullet-title">Tunable Parameters</div>
+                                                <p class="bullet-desc">Potentiometer knobs for offset and gain adjustment</p>
+                                            </div>
+                                        </li>
+                                        <li class="bullet-item">
+                                            <i class="bullet-icon fas fa-power-off"></i>
+                                            <div class="bullet-content">
+                                                <div class="bullet-title">Accelerator Cut-off</div>
+                                                <p class="bullet-desc">Automatic signal cut when deviation exceeds 10% threshold</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        
+                            <!-- HOW Section -->
+                            <div class="whr-section">
+                                <div class="whr-section-header">
+                                    <div class="whr-section-number">02</div>
+                                    <h2 class="whr-section-title">How</h2>
+                                </div>
+                                <div class="whr-section-content">
+                                    <!-- Signal Processing Flow -->
+                                    <div class="process-flow">
+                                        <div class="flow-step">
+                                            <div class="flow-icon">1</div>
+                                            <div class="flow-label">Circuit Design</div>
+                                            <div class="flow-desc">LTspice Simulation and Analysis</div>
+                                        </div>
+                                        <div class="flow-step">
+                                            <div class="flow-icon">2</div>
+                                            <div class="flow-label">PCB Layout</div>
+                                            <div class="flow-desc">Altium 2 Layer Design</div>
+                                        </div>
+                                        <div class="flow-step">
+                                            <div class="flow-icon">3</div>
+                                            <div class="flow-label">Testing</div>
+                                            <div class="flow-desc">Bench Testing</div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Technical Specifications -->
+                                    <!-- <div class="tech-specs"> -->
+                                        <!-- <div class="spec-card" data-category="Input">
+                                            <h3 class="spec-title">Sensor Interface</h3>
+                                            <ul class="spec-list">
+                                                <li>Variable resistor input from pedal</li>
+                                                <li>Voltage follower buffer stage</li>
+                                                <li>0% to 100% pedal travel range</li>
+                                                <li>Dual 3-pin sensor input connector</li>
+                                            </ul>
+                                        </div>
+                                        <div class="spec-card" data-category="Output">
+                                            <h3 class="spec-title">Output Connector Pinout</h3>
+                                            <ul class="spec-list">
+                                                <li>1 4-pin DTM connector output to main loom</li>
+                                                <li>5V power supply (Pin 1)</li>
+                                                <li>Dual output signals (Pins 2,3)</li>
+                                                <li>Ground reference (Pin 4)</li>
+                                            </ul>
+                                        </div>
+                                    </div> -->
+
+                                    <!-- Development Images -->
+                                    <div class="modern-image-grid">
+                                        <div class="modern-image-item">
+                                            <div class="modern-image-container">
+                                                <img src="images/APPSSchematic.png" alt="APPS Schematic Design">
+                                            </div>
+                                            <div class="modern-image-caption">
+                                                <h4>Schematic Design</h4>
+                                                <p>Signal conditioning circuit with dual channels</p>
+                                            </div>
+                                        </div>
+                                        <div class="modern-image-item">
+                                            <div class="modern-image-container">
+                                                <img src="images/APPSPCB.png" alt="APPS PCB Layout">
+                                            </div>
+                                            <div class="modern-image-caption">
+                                                <h4>PCB Implementation</h4>
+                                                <p>Optimized analog layout with ground planes</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <!-- RESULT Section -->
+                            <div class="whr-section">
+                                <div class="whr-section-header">
+                                    <div class="whr-section-number">03</div>
+                                    <h2 class="whr-section-title">Result</h2>
+                                </div>
+                                <!-- <div class="whr-section-content"> -->
+                                    <!-- Performance Dashboard -->
+                                    <!-- <div class="results-dashboard">
+                                        <div class="dashboard-grid">
+                                            <div class="metric-card">
+                                                <span class="metric-value">10%</span>
+                                                <div class="metric-label">Deviation Threshold</div>
+                                            </div>
+                                            <div class="metric-card">
+                                                <span class="metric-value">2</span>
+                                                <div class="metric-label">Independent Channels</div>
+                                            </div>
+                                            <div class="metric-card">
+                                                <span class="metric-value">5V</span> -->
+                                                <!-- <div class="metric-label">Supply Voltage</div>
+                                            </div>
+                                            <div class="metric-card">
+                                                <span class="metric-value">100%</span>
+                                                <div class="metric-label">FSAE Compliance</div>
+                                            </div>
+                                        </div>
+                                    </div> -->
+
+                                    <!-- Key Achievements -->
+                                    <ul class="visual-bullets">
+                                        <li class="bullet-item">
+                                            <i class="bullet-icon fas fa-trophy"></i>
+                                            <div class="bullet-content">
+                                                <div class="bullet-title">FSAE 2023</div>
+                                                <p class="bullet-desc">First in design competition</p>
+                                            </div>
+                                        <li class="bullet-item">
+                                            <i class="bullet-icon fas fa-check-circle"></i>
+                                            <div class="bullet-content">
+                                                <div class="bullet-title">FSAE Rule Compliance</div>
+                                                <p class="bullet-desc">Meets all T.4.2 Accelerator Pedal Position Sensor requirements</p>
+                                            </div>
+                                        </li>
+                                        <li class="bullet-item">
+                                            <i class="bullet-icon fas fa-cogs"></i>
+                                            <div class="bullet-content">
+                                                <div class="bullet-title">Integration</div>
+                                                <p class="bullet-desc">Seamless interface with M150 ECU and rest of 2023 Formula SAE car</p>
+                                            </div>
+                                        </li>
+                                        <li class="bullet-item">
+                                            <i class="bullet-icon fas fa-shield-alt"></i>
+                                            <div class="bullet-content">
+                                                <div class="bullet-title">Redundant Safety</div>
+                                                <p class="bullet-desc">Automatic accelerator cut-off on sensor discrepancy</p>
+                                            </div>
+                                        </li>
+                                        <li class="bullet-item">
+                                            <i class="bullet-icon fas fa-sliders-h"></i>
+                                            <div class="bullet-content">
+                                                <div class="bullet-title">Field Tunable</div>
+                                                <p class="bullet-desc">Adjustable offset and gain for different pedal assemblies</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <!-- Final Product -->
+                                    <div class="modern-image-grid">
+                                        <div class="modern-image-item">
+                                            <div class="modern-image-container">
+                                                <img src="images/APPSModel.png" alt="Final Product">
+                                            </div>
+                                            <div class="modern-image-caption">
+                                                <h4>Final PCB cad model</h4>
+                                                <p>Used in 2023 Formula SAE car</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Next Project -->
+        <section class="next-project">
+            <div class="container">
+                <div class="next-project-content">
+                    <p class="next-project-label">Back to</p>
+                    <h2 class="next-project-title">
+                        <a href="index.html#projects">All Projects</a>
+                    </h2>
+                    <div class="next-project-arrow">
+                        <a href="index.html#projects" aria-label="All Projects">
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Built by Youngsung Song</p>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>

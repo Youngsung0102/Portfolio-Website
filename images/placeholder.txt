@@ -1,0 +1,30 @@
+# Images Directory
+
+This directory should contain the following images:
+
+## Profile Images
+- profile.jpg - Your professional headshot (300x300px recommended)
+
+## Project Images
+- project1.jpg - Spotify Profile project main image
+- project1-hero.jpg - Hero image for project detail page
+- project1-dashboard.jpg - Dashboard screenshot
+- project1-track.jpg - Track details screenshot  
+- project1-playlists.jpg - Playlist creation screenshot
+
+- project2.jpg - Task Management App main image
+- project2-hero.jpg - Hero image for project detail page
+- project2-board.jpg - Task board screenshot
+- project2-details.jpg - Task details screenshot
+- project2-analytics.jpg - Analytics dashboard screenshot
+
+## Recommended Image Sizes
+- Hero images: 800x600px
+- Project screenshots: 600x400px
+- Profile image: 300x300px (square)
+
+## Image Optimization Tips
+1. Use modern formats like WebP when possible
+2. Compress images for web use
+3. Provide alt text for accessibility
+4. Consider lazy loading for performance

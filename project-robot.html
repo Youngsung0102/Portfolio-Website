@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autonomous Mobile Robot - Youngsung Song</title>
+    <meta name="description" content="Developed a sensor-fusion control system integrating IR, ultrasonic, and gyroscope feedback with PI controllers all programmed in C/C++ on Arduino Mega.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/project.css">
+</head>
+<body>
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to Content</a>
+    
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-logo">
+                <a href="index.html" class="logo-link">
+                    <span class="logo-text">YS</span>
+                </a>
+            </div>
+            
+            <div class="nav-links">
+                <ol class="nav-list">
+                    <li><a href="index.html#about" class="nav-link"><span class="nav-number">01.</span> About</a></li>
+                    <li><a href="index.html#experience" class="nav-link"><span class="nav-number">02.</span> Experience</a></li>
+                    <li><a href="index.html#projects" class="nav-link"><span class="nav-number">03.</span> Projects</a></li>
+                    <li><a href="index.html#contact" class="nav-link"><span class="nav-number">04.</span> Contact</a></li>
+                </ol>
+                <div class="resume-button">
+                    <a href="CV Generic Application (2).pdf" class="btn-outline" target="_blank" rel="noopener noreferrer">Resume</a>
+                </div>
+            </div>
+            
+            <!-- Mobile menu button -->
+            <div class="menu-btn">
+                <span class="menu-btn-burger"></span>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Main Content -->
+    <main id="main-content" class="project-main">
+        <!-- Back Button -->
+        <div class="container">
+            <div class="back-button">
+                <a href="index.html" class="back-link">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>Back to Projects</span>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Project Hero -->
+        <section class="project-hero">
+            <div class="container">
+                <div class="project-hero-content">
+                    <h1 class="project-hero-title">Autonomous Mobile Robot</h1>
+                    <p class="project-hero-subtitle">
+                        Developed a sensor-fusion control system integrating multiple sensors with PI controllers onto a mobile robot for autonomous navigation and area coverage.
+                    </p>
+                    
+                    <!-- <div class="project-links-hero">
+                        <a href="https://github.com" class="btn-outline" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                            <span>View on GitHub</span>
+                        </a>
+                        <a href="#" class="btn-primary" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-play"></i>
+                            <span>Demo Video</span>
+                        </a>
+                    </div> -->
+                    
+                    <div class="project-tech-hero">
+                        <ul class="tech-list">
+                            <li>Arduino Mega</li>
+                            <li>C++/C</li>
+                            <li>Control Systems</li>
+                            <li>Sensor Fusion</li>
+                            <li>SLAM</li>
+                            <li>Mecanum Wheels</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="project-hero-image">
+                    <img src="images/706Robotimg.png" alt="Autonomous Mobile Robot" class="hero-img">
+                </div>
+            </div>
+        </section>
+        
+        
+        <!-- Project Details: Modern Card Layout -->
+        <section class="project-details">
+            <div class="container">
+                <div class="project-content-grid">
+                    <div class="what-how-result-section">
+                        <div class="what-how-result-grid">
+                            
+                            <!-- WHAT Section -->
+                            <div class="whr-section">
+                                <div class="whr-section-header">
+                                    <div class="whr-section-number">01</div>
+                                    <h2 class="whr-section-title">What</h2>
+                                </div>
+                                <div class="whr-section-content">
+                                    <!-- Project Description -->
+                                    <div class="project-description">
+                                        <h3 style="color: var(--green); margin-bottom: 15px; font-size: var(--fz-xl);">Self-Driving Robot</h3>
+                                        <p style="color: var(--lightest-slate); font-size: var(--fz-lg); line-height: 1.6; margin-bottom: 30px;">
+                                            Built an autonomous robot as a university project that can navigate around obstacles, map unknown areas, extinguish artifical fires
+                                            and complete tasks without human control. It uses multiple sensors
+                                            and omnidirectional wheels. 
+                                        </p>
+                                    </div>
+                                    
+                                    <!-- Quick Facts -->
+                                    <!-- <div class="quick-facts">
+                                        <div class="fact-card">
+                                            <i class="fact-icon fas fa-robot"></i>
+                                            <div class="fact-value">Autonomous</div>
+                                            <div class="fact-label">Robot</div>
+                                        </div>
+                                        <div class="fact-card">
+                                            <i class="fact-icon fas fa-eye"></i>
+                                            <div class="fact-value">Multi</div>
+                                            <div class="fact-label">Sensor</div>
+                                        </div>
+                                        <div class="fact-card">
+                                            <i class="fact-icon fas fa-compass"></i>
+                                            <div class="fact-value">±2cm</div>
+                                            <div class="fact-label">Accuracy</div>
+                                        </div>
+                                        <div class="fact-card">
+                                            <i class="fact-icon fas fa-percentage"></i>
+                                            <div class="fact-value">95%</div>
+                                            <div class="fact-label">Efficiency</div>
+                                        </div>
+                                    </div> -->
+
+                                    <!-- Robot Capabilities -->
+                                    <ul class="visual-bullets">
+                                        <li class="bullet-item">
+                                            <i class="bullet-icon fas fa-route"></i>
+                                            <div class="bullet-content">
+                                                <div class="bullet-title">Autonomous Navigation</div>
+                                                <p class="bullet-desc">Complex environment navigation with obstacle avoidance</p>
+                                            </div>
+                                        </li>
+                                        <li class="bullet-item">
+                                            <i class="bullet-icon fas fa-map-marked-alt"></i>
+                                            <div class="bullet-content">
+                                                <div class="bullet-title">EKF SLAM Implementation</div>
+                                                <p class="bullet-desc">Simultaneous localization and mapping in real-time</p>
+                                            </div>
+                                        </li>
+                                        <li class="bullet-item">
+                                            <i class="bullet-icon fas fa-arrows-alt"></i>
+                                            <div class="bullet-content">
+                                                <div class="bullet-title">Omnidirectional Movement</div>
+                                                <p class="bullet-desc">Mecanum wheels for precise movement control</p>
+                                            </div>
+                                        </li>
+                                        <li class="bullet-item">
+                                            <i class="bullet-icon fas fa-brain"></i>
+                                            <div class="bullet-content">
+                                                <div class="bullet-title">Sensor Fusion</div>
+                                                <p class="bullet-desc">IR, ultrasonic,, gyroscope, phototransistor data integration</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <!-- Robot Image -->
+                                    <!-- <div class="modern-image-grid">
+                                        <div class="modern-image-item">
+                                            <div class="modern-image-container">
+                                                <img src="images/706Robotimg.png" alt="Robot Design">
+                                            </div>
+                                            <div class="modern-image-caption">
+                                                <h4>🤖 Autonomous System</h4>
+                                                <p>Complete robotic platform with sensor array</p>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        
+                            <!-- VIDEO Section -->
+                            <div class="whr-section">
+                                <div class="whr-section-header">
+                                    <div class="whr-section-number">02</div>
+                                    <h2 class="whr-section-title">Demo</h2>
+                                </div>
+                                <div class="whr-section-content">
+                                    <!-- Video Description -->
+                                    <div class="project-description">
+                                        <h3 style="color: var(--green); margin-bottom: 15px; font-size: var(--fz-xl);">Robot in Action</h3>
+                                        <p style="color: var(--lightest-slate); font-size: var(--fz-lg); line-height: 1.6; margin-bottom: 30px;">
+                                            Watch the autonomous robot navigate through obstacles, demonstrate its omnidirectional movement capabilities, 
+                                            and showcase the real-time sensor fusion and mapping system in action.
+                                        </p>
+                                    </div>
+                                    
+                                    <!-- Video Container -->
+                                    <div class="video-container">
+                                        <video class="demo-video" controls preload="metadata">
+                                            <source src="706robotvid.mp4" type="video/mp4">
+                                            Your browser does not support the video tag. 
+                                            <a href="706robotvid.mp4">Download the video</a> to watch it.
+                                        </video>
+                                    </div>
+                                    
+                                    <!-- Video Features -->
+                                    <!-- <ul class="visual-bullets">
+                                        <li class="bullet-item">
+                                            <i class="bullet-icon fas fa-video"></i>
+                                            <div class="bullet-content">
+                                                <div class="bullet-title">Live Navigation</div>
+                                                <p class="bullet-desc">Real-time obstacle avoidance and path planning</p>
+                                            </div>
+                                        </li>
+                                        <li class="bullet-item">
+                                            <i class="bullet-icon fas fa-arrows-alt"></i>
+                                            <div class="bullet-content">
+                                                <div class="bullet-title">Mecanum Wheels Demo</div>
+                                                <p class="bullet-desc">Omnidirectional movement in tight spaces</p>
+                                            </div>
+                                        </li>
+                                        <li class="bullet-item">
+                                            <i class="bullet-icon fas fa-radar-dish"></i>
+                                            <div class="bullet-content">
+                                                <div class="bullet-title">Sensor Integration</div>
+                                                <p class="bullet-desc">Multiple sensor data fusion for precise control</p>
+                                            </div>
+                                        </li>
+                                        <li class="bullet-item">
+                                            <i class="bullet-icon fas fa-map"></i>
+                                            <div class="bullet-content">
+                                                <div class="bullet-title">SLAM Performance</div>
+                                                <p class="bullet-desc">Simultaneous mapping and localization capabilities</p>
+                                            </div>
+                                        </li>
+                                    </ul> -->
+                                </div>
+                            </div>
+                        
+                            <!-- HOW Section -->
+                            <div class="whr-section">
+                                <div class="whr-section-header">
+                                    <div class="whr-section-number">03</div>
+                                    <h2 class="whr-section-title">How</h2>
+                                </div>
+                                <div class="whr-section-content">
+                                    <!-- Development Process Flow -->
+                                    <div class="process-flow">
+                                        <div class="flow-step">
+                                            <div class="flow-icon">1</div>
+                                            <div class="flow-label">Hardware</div>
+                                            <div class="flow-desc">Sensor integration</div>
+                                        </div>
+                                        <div class="flow-step">
+                                            <div class="flow-icon">2</div>
+                                            <div class="flow-label">Software</div>
+                                            <div class="flow-desc">Control algorithms + SLAM</div>
+                                        </div>
+                                        <!-- <div class="flow-step">
+                                            <div class="flow-icon">3</div>
+                                            <div class="flow-label">SLAM</div>
+                                            <div class="flow-desc">Mapping system</div>
+                                        </div> -->
+                                        <div class="flow-step">
+                                            <div class="flow-icon">3</div>
+                                            <div class="flow-label">Testing</div>
+                                            <div class="flow-desc">Navigation and Task completion Validation</div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Technical Implementation -->
+                                    <div class="tech-specs">
+                                        <div class="spec-card" data-category="Hardware">
+                                            <h3 class="spec-title">Sensor Array</h3>
+                                            <ul class="spec-list">
+                                                <li>IR sensors (close-range)</li>
+                                                <li>Ultrasonic distance sensors</li>
+                                                <li>Gyroscope sensor (IMU) for orientation</li>
+                                                <li>Mecanum wheels</li>
+                                            </ul>
+                                        </div>
+                                        <div class="spec-card" data-category="Software">
+                                            <h3 class="spec-title">Control System</h3>
+                                            <ul class="spec-list">
+                                                <li>PI control system</li>
+                                                <li>Kalman filters</li>
+                                                <li>Inverse kinematics</li>
+                                                <li>Obstacle avoidance</li>
+                                                <li>SLAM implementation</li>
+                                            </ul>
+                                        </div>
+                                        <!-- <div class="spec-card" data-category="Algorithms">
+                                            <h3 class="spec-title">Navigation</h3>
+                                            <ul class="spec-list">
+                                                <li>SLAM implementation</li>
+                                                <li>Path planning algorithms</li>
+                                                <li>Obstacle avoidance</li>
+                                                <li>Area coverage patterns</li>
+                                            </ul>
+                                        </div> -->
+                                    </div>
+
+                                    <!-- Development Images Slider -->
+                                    <div class="image-slider-container">
+                                        <h3 class="slider-title">FSM & Hardware</h3>
+                                        <div class="image-slider">
+                                            <div class="slider-track" id="robotSliderTrack">
+                                                <!-- Slide 1: FSM -->
+                                                <div class="slide active">
+                                                    <div class="slide-image-container">
+                                                        <img src="images/706robotfsmimg.png" alt="Finite State Machine Diagram" class="slide-image">
+                                                    </div>
+                                                    <div class="slide-caption">
+                                                        <h4>Finite State Machine</h4>
+                                                        <p>Control flow logic for autonomous navigation and task execution</p>
+                                                    </div>
+                                                </div>
+                                                
+                                                <!-- Slide 2: Hardware -->
+                                                <div class="slide">
+                                                    <div class="slide-image-container">
+                                                        <img src="images/706robothardwareimg.png" alt="Hardware Architecture" class="slide-image">
+                                                    </div>
+                                                    <div class="slide-caption">
+                                                        <h4>Hardware Integration</h4>
+                                                        <p>Sensor array, motor controllers, and processing unit layout</p>
+                                                    </div>
+                                                </div>
+                                                
+
+                                            </div>
+                                            
+                                            <!-- Navigation Controls -->
+                                            <div class="slider-controls">
+                                                <button class="slider-btn prev-btn" id="prevBtn" aria-label="Previous image">
+                                                    <i class="fas fa-chevron-left"></i>
+                                                </button>
+                                                <button class="slider-btn next-btn" id="nextBtn" aria-label="Next image">
+                                                    <i class="fas fa-chevron-right"></i>
+                                                </button>
+                                            </div>
+                                            
+                                            <!-- Dots Indicator -->
+                                            <div class="slider-dots">
+                                                <span class="dot active" data-slide="0"></span>
+                                                <span class="dot" data-slide="1"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <!-- RESULT Section -->
+                            <div class="whr-section">
+                                <div class="whr-section-header">
+                                    <div class="whr-section-number">04</div>
+                                    <h2 class="whr-section-title">Result</h2>
+                                </div>
+                                <!-- <div class="whr-section-content">
+                                    <div class="results-dashboard">
+                                        <div class="dashboard-grid">
+                                            <div class="metric-card">
+                                                <span class="metric-value">±2cm</span>
+                                                <div class="metric-label">Accuracy</div>
+                                            </div>
+                                            <div class="metric-card">
+                                                <span class="metric-value">95%</span>
+                                                <div class="metric-label">Task Success</div>
+                                            </div>
+                                            <div class="metric-card">
+                                                <span class="metric-value">Real-time</span>
+                                                <div class="metric-label">Performance</div>
+                                            </div>
+                                            <div class="metric-card">
+                                                <span class="metric-value">High</span>
+                                                <div class="metric-label">Marks</div>
+                                            </div>
+                                        </div>
+                                    </div> -->
+
+                                    <!-- Key Achievements -->
+                                    <ul class="visual-bullets">
+                                        <!-- <li class="bullet-item">
+                                            <i class="bullet-icon fas fa-trophy"></i>
+                                            <div class="bullet-content">
+                                                <div class="bullet-title">Academic Excellence</div>
+                                                <p class="bullet-desc">High marks for technical innovation and implementation</p>
+                                            </div>
+                                        </li> -->
+                                        <li class="bullet-item">
+                                            <i class="bullet-icon fas fa-bullseye"></i>
+                                            <div class="bullet-content">
+                                                <div class="bullet-title">Successful Task Completions</div>
+                                                <p class="bullet-desc">Navigation through complex obstacle courses, extinguishing fires, and mapping unknown areas</p>
+                                            </div>
+                                        </li>
+                                        <li class="bullet-item">
+                                            <i class="bullet-icon fas fa-cogs"></i>
+                                            <div class="bullet-content">
+                                                <div class="bullet-title">Sensor Fusion Success</div>
+                                                <p class="bullet-desc">Sophisticated multi-sensor integration and processing</p>
+                                            </div>
+                                        </li>
+                                        <li class="bullet-item">
+                                            <i class="bullet-icon fas fa-clock"></i>
+                                            <div class="bullet-content">
+                                                <div class="bullet-title">Real-time Operation</div>
+                                                <p class="bullet-desc">Optimized algorithms for Arduino platform constraints</p>
+                                            </div>
+                                        </li>
+                                        <!-- <li class="bullet-item">
+                                            <i class="bullet-icon fas fa-clock"></i>
+                                            <div class="bullet-content">
+                                                <div class="bullet-title"></div>
+                                                <p class="bullet-desc">Optimized algorithms for Arduino platform constraints</p>
+                                            </div>
+                                        </li> -->
+                                    </ul>
+
+                                    <!-- Technology Tags -->
+                                    <!-- <div class="tag-container">
+                                        <span class="visual-tag">Autonomous</span>
+                                        <span class="visual-tag">SLAM</span>
+                                        <span class="visual-tag">Sensor Fusion</span>
+                                        <span class="visual-tag">Real-time</span>
+                                        <span class="visual-tag">Mecanum Wheels</span>
+                                    </div> -->
+
+                                    <!-- Final Robot -->
+                                    <!-- <div class="modern-image-grid">
+                                        <div class="modern-image-item">
+                                            <div class="modern-image-container">
+                                                <img src="images/706Robotimg.png" alt="Final Robot">
+                                            </div>
+                                            <div class="modern-image-caption">
+                                                <h4>Complete System</h4>
+                                                <p>Autonomous robot with all tasks successfully completed during demo</p>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Next Project -->
+        <section class="next-project">
+            <div class="container">
+                <div class="next-project-content">
+                    <p class="next-project-label">Next Project</p>
+                    <h2 class="next-project-title">
+                        <a href="project-a2c.html">Analogue to CAN Converter</a>
+                    </h2>
+                    <div class="next-project-arrow">
+                        <a href="project-a2c.html" aria-label="Next Project">
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Built by Youngsung Song</p>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>

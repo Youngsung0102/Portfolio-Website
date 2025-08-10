@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management App - Your Name</title>
+    <meta name="description" content="A minimal task management application built with React, TypeScript, and Node.js.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/project.css">
+</head>
+<body>
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to Content</a>
+    
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-logo">
+                <a href="index.html" class="logo-link">
+                    <span class="logo-text">YN</span>
+                </a>
+            </div>
+            
+            <div class="nav-links">
+                <ol class="nav-list">
+                    <li><a href="index.html#about" class="nav-link"><span class="nav-number">01.</span> About</a></li>
+                    <li><a href="index.html#experience" class="nav-link"><span class="nav-number">02.</span> Experience</a></li>
+                    <li><a href="index.html#projects" class="nav-link"><span class="nav-number">03.</span> Projects</a></li>
+                    <li><a href="index.html#contact" class="nav-link"><span class="nav-number">04.</span> Contact</a></li>
+                </ol>
+                <div class="resume-button">
+                    <a href="CV Generic Application (2).pdf" class="btn-outline" target="_blank" rel="noopener noreferrer">Resume</a>
+                </div>
+            </div>
+            
+            <!-- Mobile menu button -->
+            <div class="menu-btn">
+                <span class="menu-btn-burger"></span>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Main Content -->
+    <main id="main-content" class="project-main">
+        <!-- Back Button -->
+        <div class="container">
+            <div class="back-button">
+                <a href="index.html" class="back-link">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>Back to Projects</span>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Project Hero -->
+        <section class="project-hero">
+            <div class="container">
+                <div class="project-hero-content">
+                    <h1 class="project-hero-title">Task Management App</h1>
+                    <p class="project-hero-subtitle">
+                        A minimal task management application designed for productivity
+                    </p>
+                    
+                    <!-- <div class="project-links-hero">
+                        <a href="https://github.com" class="btn-outline" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                            <span>View on GitHub</span>
+                        </a>
+                        <a href="https://example.com" class="btn-primary" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span>Live Demo</span>
+                        </a>
+                    </div> -->
+                    
+                    <div class="project-tech-hero">
+                        <ul class="tech-list">
+                            <li>React</li>
+                            <li>TypeScript</li>
+                            <li>Node.js</li>
+                            <li>MongoDB</li>
+                            <li>Express</li>
+                            <li>Socket.io</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="project-hero-image">
+                    <img src="images/project2-hero.jpg" alt="Task Management Application" class="hero-img">
+                </div>
+            </div>
+        </section>
+        
+        <!-- Project Details -->
+        <section class="project-details">
+            <div class="container">
+                <div class="project-content-grid">
+                    <!-- Overview -->
+                    <div class="project-section">
+                        <h2 class="project-section-title">Project Overview</h2>
+                        <div class="project-section-content">
+                            <p>
+                                A comprehensive task management application built with modern web technologies. 
+                                The app features drag-and-drop functionality, real-time updates, and a clean, 
+                                intuitive interface designed to enhance productivity and team collaboration.
+                            </p>
+                            <p>
+                                Built with React and TypeScript on the frontend and Node.js with MongoDB on 
+                                the backend, the application provides a robust foundation for managing tasks, 
+                                projects, and team workflows. Real-time synchronization ensures all team 
+                                members stay updated with the latest changes.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Features -->
+                    <div class="project-section">
+                        <h2 class="project-section-title">Key Features</h2>
+                        <div class="project-section-content">
+                            <ul class="feature-list">
+                                <li>
+                                    <div class="feature-item">
+                                        <i class="fas fa-hand-paper"></i>
+                                        <div>
+                                            <h3>Drag & Drop Interface</h3>
+                                            <p>Intuitive drag-and-drop functionality for organizing tasks and projects</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="feature-item">
+                                        <i class="fas fa-sync-alt"></i>
+                                        <div>
+                                            <h3>Real-time Updates</h3>
+                                            <p>Live synchronization across all devices using WebSocket connections</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="feature-item">
+                                        <i class="fas fa-users"></i>
+                                        <div>
+                                            <h3>Team Collaboration</h3>
+                                            <p>Multi-user support with role-based permissions and team workspaces</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="feature-item">
+                                        <i class="fas fa-chart-bar"></i>
+                                        <div>
+                                            <h3>Progress Tracking</h3>
+                                            <p>Visual progress indicators and productivity analytics</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Technical Implementation -->
+                    <div class="project-section">
+                        <h2 class="project-section-title">Technical Implementation</h2>
+                        <div class="project-section-content">
+                            <div class="tech-details">
+                                <div class="tech-category">
+                                    <h3>Frontend Architecture</h3>
+                                    <p>
+                                        Built with React and TypeScript for type safety and better developer 
+                                        experience. Utilizes React DnD for drag-and-drop functionality and 
+                                        context API for state management across components.
+                                    </p>
+                                </div>
+                                <div class="tech-category">
+                                    <h3>Backend & Database</h3>
+                                    <p>
+                                        Express.js server with MongoDB for data persistence. Implements JWT 
+                                        authentication and RESTful API design patterns. Socket.io provides 
+                                        real-time communication capabilities.
+                                    </p>
+                                </div>
+                                <div class="tech-category">
+                                    <h3>Performance & Security</h3>
+                                    <p>
+                                        Optimized with lazy loading, code splitting, and efficient database 
+                                        queries. Security measures include input validation, CORS configuration, 
+                                        and secure authentication flows.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Challenges & Solutions -->
+                    <div class="project-section">
+                        <h2 class="project-section-title">Challenges & Solutions</h2>
+                        <div class="project-section-content">
+                            <div class="challenge-item">
+                                <h3>Real-time Collaboration</h3>
+                                <p>
+                                    Implementing real-time updates while maintaining data consistency required 
+                                    careful design of the WebSocket event system and conflict resolution 
+                                    strategies for concurrent edits.
+                                </p>
+                            </div>
+                            <div class="challenge-item">
+                                <h3>Complex State Management</h3>
+                                <p>
+                                    Managing the complex state of multiple projects, tasks, and user interactions 
+                                    led to implementing a custom context-based state management solution with 
+                                    optimistic updates.
+                                </p>
+                            </div>
+                            <div class="challenge-item">
+                                <h3>Performance Optimization</h3>
+                                <p>
+                                    Large task lists with drag-and-drop functionality created performance 
+                                    challenges. I implemented virtualization and memoization techniques to 
+                                    maintain smooth interactions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project Images -->
+                <div class="project-gallery">
+                    <h2 class="project-section-title">Project Gallery</h2>
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="images/project2-board.jpg" alt="Task Board View" class="gallery-img">
+                            <p class="gallery-caption">Kanban-style task board with drag-and-drop</p>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/project2-details.jpg" alt="Task Details" class="gallery-img">
+                            <p class="gallery-caption">Detailed task view with comments and attachments</p>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/project2-analytics.jpg" alt="Analytics Dashboard" class="gallery-img">
+                            <p class="gallery-caption">Team productivity analytics and insights</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Next Project -->
+        <section class="next-project">
+            <div class="container">
+                <div class="next-project-content">
+                    <p class="next-project-label">Back to</p>
+                    <h2 class="next-project-title">
+                        <a href="index.html#projects">All Projects</a>
+                    </h2>
+                    <div class="next-project-arrow">
+                        <a href="index.html#projects" aria-label="All Projects">
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Designed & Built by Your Name</p>
+            <p>Inspired by <a href="https://brittanychiang.com" target="_blank" rel="noopener noreferrer">Brittany Chiang</a></p>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>

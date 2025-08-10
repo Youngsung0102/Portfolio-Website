@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analogue to CAN Converter - Youngsung Song</title>
+    <meta name="description" content="Developed an analogue to CAN converter for the 2023 Formula SAE car using Altium, LTspice enhancing modularity and programming onboard STM32 microcontroller.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/project.css">
+</head>
+<body>
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to Content</a>
+    
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-logo">
+                <a href="index.html" class="logo-link">
+                    <span class="logo-text">YS</span>
+                </a>
+            </div>
+            
+            <div class="nav-links">
+                <ol class="nav-list">
+                    <li><a href="index.html#about" class="nav-link"><span class="nav-number">01.</span> About</a></li>
+                    <li><a href="index.html#experience" class="nav-link"><span class="nav-number">02.</span> Experience</a></li>
+                    <li><a href="index.html#projects" class="nav-link"><span class="nav-number">03.</span> Projects</a></li>
+                    <li><a href="index.html#contact" class="nav-link"><span class="nav-number">04.</span> Contact</a></li>
+                </ol>
+                <div class="resume-button">
+                    <a href="CV Generic Application (2).pdf" class="btn-outline" target="_blank" rel="noopener noreferrer">Resume</a>
+                </div>
+            </div>
+            
+            <!-- Mobile menu button -->
+            <div class="menu-btn">
+                <span class="menu-btn-burger"></span>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Main Content -->
+    <main id="main-content" class="project-main">
+        <!-- Back Button -->
+        <div class="container">
+            <div class="back-button">
+                <a href="index.html" class="back-link">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>Back to Projects</span>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Project Hero -->
+        <section class="project-hero">
+            <div class="container">
+                <div class="project-hero-content">
+                    <h1 class="project-hero-title">Analogue to CAN Converter</h1>
+                    <p class="project-hero-subtitle">
+                        Developed an analogue to CAN converter for the 2023 Formula SAE car enhancing modularity and real-time sensor data conversion.
+                    </p>
+<!--                     
+                    <div class="project-links-hero">
+                        <a href="https://github.com" class="btn-outline" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                            <span>View on GitHub</span>
+                        </a>
+                        <a href="#" class="btn-primary" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-car"></i>
+                            <span>Formula SAE</span>
+                        </a>
+                    </div>
+                     -->
+                    <div class="project-tech-hero">
+                        <ul class="tech-list">
+                            <li>Altium</li>
+                            <li>LTspice</li>
+                            <li>C++/C</li>
+                            <li>STM32</li>
+                            <li>CAN Bus</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="project-hero-image">
+                    <img src="images/A2CModel.png" alt="Analogue to CAN Converter" class="hero-img">
+                </div>
+            </div>
+        </section>
+        
+        
+        <!-- Project Details: Modern Card Layout -->
+        <section class="project-details">
+            <div class="container">
+                <div class="project-content-grid">
+                    <div class="what-how-result-section">
+                        <div class="what-how-result-grid">
+                            
+                            <!-- WHAT Section -->
+                            <div class="whr-section">
+                                <div class="whr-section-header">
+                                    <div class="whr-section-number">01</div>
+                                    <h2 class="whr-section-title">What</h2>
+                                </div>
+                                <div class="whr-section-content">
+                                    <!-- Project Description -->
+                                    <div class="project-description">
+                                        <h3 style="color: var(--green); margin-bottom: 15px; font-size: var(--fz-xl);">Electronics Device for Race Cars</h3>
+                                        <p style="color: var(--lightest-slate); font-size: var(--fz-lg); line-height: 1.6; margin-bottom: 30px;">
+                                            Built a custom electronic device that converts analog sensor signals (like throttle position, brake pressure) 
+                                            into digital CAN bus messages for the Formula SAE racing car's computer systems to allowing for modularity and uniform data exchange.
+                                        </p>
+                                    </div>
+                                    
+                                    <!-- Quick Facts -->
+                                    <!-- <div class="quick-facts">
+                                        <div class="fact-card">
+                                            <i class="fact-icon fas fa-microchip"></i>
+                                            <div class="fact-value">8</div>
+                                            <div class="fact-label">Channels</div>
+                                        </div>
+                                        <div class="fact-card">
+                                            <i class="fact-icon fas fa-signal"></i>
+                                            <div class="fact-value">12-bit</div>
+                                            <div class="fact-label">ADC Resolution</div>
+                                        </div>
+                                        <div class="fact-card">
+                                            <i class="fact-icon fas fa-tachometer-alt"></i>
+                                            <div class="fact-value">1kHz</div>
+                                            <div class="fact-label">Sample Rate</div>
+                                        </div>
+                                        <div class="fact-card">
+                                            <i class="fact-icon fas fa-car"></i>
+                                            <div class="fact-value">Formula</div>
+                                            <div class="fact-label">SAE 2023</div>
+                                        </div>
+                                    </div> -->
+
+                                    <!-- Project Objectives -->
+                                    <ul class="visual-bullets">
+                                        <li class="bullet-item">
+                                            <i class="bullet-icon fas fa-bridge"></i>
+                                            <div class="bullet-content">
+                                                <div class="bullet-title">Bridge Sensors</div>
+                                                <p class="bullet-desc">Convert analogue sensor signals to CAN bus digital format</p>
+                                            </div>
+                                        </li>
+                                        <li class="bullet-item">
+                                            <i class="bullet-icon fas fa-clock"></i>
+                                            <div class="bullet-content">
+                                                <div class="bullet-title">Real-time Performance</div>
+                                                <p class="bullet-desc">Real time sensor data conversion</p>
+                                            </div>
+                                        </li>
+                                        <li class="bullet-item">
+                                            <i class="bullet-icon fas fa-shield-alt"></i>
+                                            <div class="bullet-content">
+                                                <div class="bullet-title">FSAE Compliance</div>
+                                                <p class="bullet-desc">Must meet FSAE rules and regulations for design</p>
+                                            </div>
+                                        </li>
+                                        <li class="bullet-item">
+                                            <i class="bullet-icon fas fa-network-wired"></i>
+                                            <div class="bullet-content">
+                                                <div class="bullet-title">CAN Bus Integration</div>
+                                                <p class="bullet-desc">Integration with vehicle control network</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+
+                                </div>
+                            </div>
+                
+                            <!-- HOW Section -->
+                            <div class="whr-section">
+                                <div class="whr-section-header">
+                                    <div class="whr-section-number">02</div>
+                                    <h2 class="whr-section-title">How</h2>
+                                </div>
+                                <div class="whr-section-content">
+                                    <!-- Development Process Flow -->
+                                    <div class="process-flow">
+                                        <div class="flow-step">
+                                            <div class="flow-icon">1</div>
+                                            <div class="flow-label">Circuit Design</div>
+                                            <div class="flow-desc">LTspice simulation & analysis</div>
+                                        </div>
+                                        <div class="flow-step">
+                                            <div class="flow-icon">2</div>
+                                            <div class="flow-label">PCB Layout</div>
+                                            <div class="flow-desc">Altium 2-layer design</div>
+                                        </div>
+                                        <div class="flow-step">
+                                            <div class="flow-icon">3</div>
+                                            <div class="flow-label">Programming</div>
+                                            <div class="flow-desc">STM32 C/C++ code</div>
+                                        </div>
+                                        <div class="flow-step">
+                                            <div class="flow-icon">4</div>
+                                            <div class="flow-label">Testing</div>
+                                            <div class="flow-desc">Bench Testing</div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Technical Specifications -->
+                                    <div class="tech-specs">
+                                        <div class="spec-card" data-category="Hardware">
+                                            <h3 class="spec-title">Circuit Design</h3>
+                                            <ul class="spec-list">
+                                                <li>Buffering with op-amps</li>
+                                                <li>Active filters for noise reduction</li>
+                                                <li>Transient Protection via TVS diodes</li>
+                                                <li>Optional CMC choke high frequency filtering</li>
+                                            </ul>
+                                        </div>
+                                        <div class="spec-card" data-category="Software">
+                                            <h3 class="spec-title">Embedded Code</h3>
+                                            <ul class="spec-list">
+                                                <li>STM32 Configuration</li>
+                                                <li>CAN protocol implementation</li>
+                                            </ul>
+                                        </div>
+                                        <div class="spec-card" data-category="Tools">
+                                            <h3 class="spec-title">Development Tools</h3>
+                                            <ul class="spec-list">
+                                                <li>Altium Designer (PCB)</li>
+                                                <li>LTspice (Simulation)</li>
+                                                <li>STM32CubeIDE (Code)</li>
+                                                <li>Testing equipment</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- Implementation Images -->
+                                    <div class="modern-image-grid">
+                                        <div class="modern-image-item">
+                                            <div class="modern-image-container">
+                                                <img src="images/A2C.png" alt="System Schematic">
+                                            </div>
+                                            <div class="modern-image-caption">
+                                                <h4>Circuit Schematic</h4>
+                                                <p>Complete analogue to CAN conversion schematic</p>
+                                            </div>
+                                        </div>
+                                        <div class="modern-image-item">
+                                            <div class="modern-image-container">
+                                                <img src="images/A2CPCB.png" alt="PCB Layout">
+                                            </div>
+                                            <div class="modern-image-caption">
+                                                <h4>PCB Layout</h4>
+                                                <p>4-layer board with EMI isolation</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <!-- RESULT Section -->
+                            <div class="whr-section">
+                                <div class="whr-section-header">
+                                    <div class="whr-section-number">03</div>
+                                    <h2 class="whr-section-title">Result</h2>
+                                </div>
+                                
+                               <!-- <div class="whr-section-content">
+                                   
+                                    <div class="results-dashboard">
+                                        <div class="dashboard-grid">
+                                            <div class="metric-card">
+                                                <span class="metric-value">&lt;1ms</span>
+                                                <div class="metric-label">Latency</div>
+                                            </div>
+                                            <div class="metric-card">
+                                                <span class="metric-value">99.9%</span>
+                                                <div class="metric-label">Data Integrity</div>
+                                            </div>
+                                            <div class="metric-card">
+                                                <span class="metric-value">100%</span>
+                                                <div class="metric-label">Season Uptime</div>
+                                            </div>
+                                            <div class="metric-card">
+                                                <span class="metric-value">±0.1%</span>
+                                                <div class="metric-label">Linearity</div>
+                                            </div>
+                                        </div>
+                                    </div>     -->
+
+                                    <!-- Key Achievements -->
+                                    <ul class="visual-bullets">
+                                        <li class="bullet-item">
+                                            <i class="bullet-icon fas fa-check-circle"></i>
+                                            <div class="bullet-content">
+                                                <div class="bullet-title">Formula SAE Compliance</div>
+                                                <p class="bullet-desc">Passed all technical requirements set by FSAE</p>
+                                            </div>
+                                        </li>
+                                        <li class="bullet-item">
+                                            <i class="bullet-icon fas fa-trophy"></i>
+                                            <div class="bullet-content">
+                                                <div class="bullet-title">Racing Performance</div>
+                                                <p class="bullet-desc">Enabled real-time telemetry for improved lap times</p>
+                                            </div>
+                                        </li>
+                                        <li class="bullet-item">
+                                            <i class="bullet-icon fas fa-cogs"></i>
+                                            <div class="bullet-content">
+                                                <div class="bullet-title">Production Ready</div>
+                                                <p class="bullet-desc">Reliable operation throughout entire season</p>
+                                            </div>
+                                        </li>
+                                        <!-- <li class="bullet-item">
+                                            <i class="bullet-icon fas fa-recycle"></i>
+                                            <div class="bullet-content">
+                                                <div class="bullet-title">Design Reference</div>
+                                                <p class="bullet-desc">Used as template for future Formula SAE projects</p>
+                                            </div>
+                                        </li> -->
+                                    </ul>
+
+                                    <!-- Technology Tags -->
+                                    <!-- <div class="tag-container">
+                                        <span class="visual-tag">Automotive Grade</span>
+                                        <span class="visual-tag">Real-time</span>
+                                        <span class="visual-tag">EMI Compliant</span>
+                                        <span class="visual-tag">Production Ready</span>
+                                        <span class="visual-tag">High Performance</span>
+                                    </div> -->
+
+                                    <!-- Final Product Image -->
+                                    <div class="modern-image-grid">
+                                        <div class="modern-image-item">
+                                            <div class="modern-image-container">
+                                                <img src="images/A2CModel.png" alt="Final Product">
+                                            </div>
+                                            <div class="modern-image-caption">
+                                                <h4>Production Success</h4>
+                                                <p>Successfully deployed in 2023 Formula SAE season</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Next Project -->
+        <section class="next-project">
+            <div class="container">
+                <div class="next-project-content">
+                    <p class="next-project-label">Next Project</p>
+                    <h2 class="next-project-title">
+                        <a href="project-apps.html">Accelerator Pedal Position Sensor</a>
+                    </h2>
+                    <div class="next-project-arrow">
+                        <a href="project-apps.html" aria-label="Next Project">
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Built by Youngsung Song</p>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
